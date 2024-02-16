@@ -3,6 +3,7 @@ import Timeline from "./components/timeline";
 import JsonViewer from "./components/JsonViewer";
 
 import data from "../../data.json"
+import TestForm from "./components/testForm";
 
 
 
@@ -28,18 +29,16 @@ import data from "../../data.json"
     2) create api to retrieve data from database
     3) devlop front end to display data
 
-    
-  
 
+  
+    start building api to handle database imports
 */
 
 
 export default function Home() {
   return (
-    <main>
-      <Timeline />
-      <h1>JSON Viewer</h1>
-      <JsonViewer data={data} />
+    <main className="flex justify-center pt-12">
+      <TestForm />
     </main>
   );
 }
