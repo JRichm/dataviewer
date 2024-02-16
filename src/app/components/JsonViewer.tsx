@@ -19,8 +19,7 @@ const JsonViewer = ({ data, name }) => {
     const renderProperty = (key, value) => {
       return (
         <div key={key} style={{ marginLeft: '20px' }}>
-          <span>{key}:</span>
-          {renderValue(value)}
+          <span>{key}: {renderValue(value)}</span>
         </div>
       );
     };
